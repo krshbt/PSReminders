@@ -1,0 +1,63 @@
+{
+    "Template":{
+        "Title": "Reminder Name",
+        "Description": "Reminder Description",
+        "Date": "dd-MM-yyyy",
+        "Time": "HH:mm:ss",
+        "Repeat": true,
+        "Options": "Daily|Weekdays|Weekly|Monthly|Yearly|Custom",
+        "SubOptionsWeekly": [],
+        "SubOptionsMonthly": [],
+        "SubOptionsYearly": [],
+        "SubOptionsCustom": 0,
+        "Icon": ""
+    },
+    "Configuration": {
+        "EnableSound": false,
+        "MarginMinutes": 1
+    },
+    "Active":[
+        {
+            "Title": "Tea Break",
+            "Description": "Take a tea break",
+            "Date": "13-08-2020",
+            "Time": "17:00:00",
+            "Repeat": true,
+            "Options": "Weekdays",
+            "SubOptionsWeekly": [],
+            "SubOptionsMonthly": [],
+            "SubOptionsYearly": [],
+            "SubOptionsCustom": 0,
+            "Icon": "TeaBreak.png"
+        },
+        {
+            "Title": "Daily Task Planner",
+            "Description": "Plan your day",
+            "Date": "13-08-2020",
+            "Time": "11:00:00",
+            "Repeat": true,
+            "Options": "Weekdays",
+            "SubOptionsWeekly": [],
+            "SubOptionsMonthly": [],
+            "SubOptionsYearly": [],
+            "SubOptionsCustom": 0,
+            "Icon": "planner.png"
+        },
+        {
+            "Title": "Fill Timesheet",
+            "Description": "Fill your timesheet for today",
+            "Date": "14-08-2020",
+            "Time": "19:00:00",
+            "Repeat": true,
+            "Options": "Weekdays",
+            "SubOptionsWeekly": [],
+            "SubOptionsMonthly": [],
+            "SubOptionsYearly": [],
+            "SubOptionsCustom": 0,
+            "Icon": ""
+        }
+    ],
+    "Archive":[
+        
+    ]
+}
