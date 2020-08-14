@@ -1,13 +1,13 @@
-﻿$isModuleExists = Get-Module BurntToast
-if($null -eq $isModuleExists){
-    #Install-Module -Name BurntToast -Scope CurrentUser -Force
-}
+﻿
+######### If notifications are not working install the below module
+#Install-Module -Name BurntToast -Scope CurrentUser -Force
 
 $configJson = $PSScriptRoot + "\reminders.json"
 $logoPath = $PSScriptRoot + "\icons\"
 $defautIcon = 'bell.png'
 $notificationSound = 'Alarm'
 
+#Show Notificaion
 function showNotification($title, $desc, $icon, $sound) {
     $header = New-BTHeader -Id '001' -Title $title
     if($null -eq $desc -or $desc -eq ''){
@@ -26,6 +26,7 @@ function showNotification($title, $desc, $icon, $sound) {
     }
 }
 
+#Process Reminders
 function ProcessReminders() {
     $inputReminders = Get-Content -Raw -Path $configJson | ConvertFrom-Json
     if($inputReminders.Active.Count -gt 0){
